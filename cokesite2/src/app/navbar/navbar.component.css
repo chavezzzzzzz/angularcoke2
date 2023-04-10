@@ -1,0 +1,16 @@
+div {
+    background-color: aqua;
+    display: flex;
+}
+#logo {
+    margin-left: 42px;
+    margin-top: 20px;
+}
+#products {
+    margin-left: 194px;
+    margin-top: 37px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 15px;
+}
