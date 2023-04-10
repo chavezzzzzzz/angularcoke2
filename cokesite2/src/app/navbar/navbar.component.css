@@ -1,5 +1,5 @@
-div {
-    background-color: aqua;
+#div1 {
+    background-color: rgb(255, 255, 255);
     display: flex;
 }
 #logo {
@@ -8,9 +8,110 @@ div {
 }
 #products {
     margin-left: 194px;
-    margin-top: 37px;
+    padding-top: 37px;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     font-size: 15px;
+}
+#products:hover {
+    color:red;
+}
+div:has(#products:hover) #triangle {
+    animation: swivel .05s linear 1 forwards;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    margin-top: 44px;
+    margin-left: 8px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 5px solid red;
+  }
+@keyframes swivel {
+  from{
+      transform: rotate(0deg) translate(0px)
+  }
+  to {
+      transform: rotate(90deg) translate(-5px)
+  }
+}
+#shop {
+    margin-left: 50px;
+    padding-top: 37px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+#shop:hover {
+    color: red;
+}
+#div1:has(#shop:hover) #p1 {
+    margin-left: 473px;
+    background-color: rgb(255, 0, 0);
+    height: 8px;
+    width: 46px;
+    margin-top: 12px;
+}
+#give {
+    margin-left: 48px;
+    padding-top: 37px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+#div1:has(#give:hover) #p2 {
+    margin-left: 564px;
+    background-color: rgb(255, 0, 0);
+    height: 8px;
+    width: 42px;
+    margin-top: 12px;
+}
+#give:hover {
+    color: red;
+}
+#rewards {
+    margin-left: 47px;
+    padding-top: 37px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+#rewards:hover {
+    color: red;
+}
+#where {
+    margin-left: 50px;
+    padding-top: 37px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+#where:hover {
+    color: red;
+}
+#studio {
+    margin-left: 49px;
+    padding-top: 37px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+#studio:hover {
+    color: red;
+}
+#section1 {
+    position: absolute;
+    display: flex;
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+}
+#rosalia2 {
+    margin-top: 20px
 }
