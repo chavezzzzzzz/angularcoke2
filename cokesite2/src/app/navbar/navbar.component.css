@@ -3,12 +3,12 @@
     display: flex;
 }
 #logo {
-    margin-left: 42px;
+    margin-left: 1.64vw;
     margin-top: 20px;
 }
 #products {
-    margin-left: 194px;
-    padding-top: 37px;
+    margin-left: 7.55vw;
+    padding-top: 2.75vh;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
@@ -23,8 +23,8 @@ div:has(#products:hover) #triangle {
 #triangle {
     width: 0;
     height: 0;
-    margin-top: 44px;
-    margin-left: 8px;
+    margin-top: 3.23vh;
+    margin-left: .35vw;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     border-left: 5px solid red;
@@ -38,8 +38,8 @@ div:has(#products:hover) #triangle {
   }
 }
 #shop {
-    margin-left: 50px;
-    padding-top: 37px;
+    margin-left: 1.95vw;
+    padding-top: 2.75vh;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -47,16 +47,29 @@ div:has(#products:hover) #triangle {
 #shop:hover {
     color: red;
 }
-#div1:has(#shop:hover) #p1 {
-    margin-left: 473px;
-    background-color: rgb(255, 0, 0);
-    height: 8px;
-    width: 46px;
-    margin-top: 12px;
+#shop::after {
+    content: "   ";
+    color: blue;
+    display: block;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1.87em;
+    height: .5em;
+    width: 2.9em;
+}
+#div1:has(#shop:hover) #shop::after {
+    content: "   ";
+    color: blue;
+    display: block;
+    position: relative;
+    background-color: blue;
+    margin-top: 1.87em;
+    height: .5em;
+    width: 2.9em;
 }
 #give {
-    margin-left: 48px;
-    padding-top: 37px;
+    margin-left: 1.90vw;
+    padding-top: 2.75vh;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -73,8 +86,8 @@ div:has(#products:hover) #triangle {
     color: red;
 }
 #rewards {
-    margin-left: 47px;
-    padding-top: 37px;
+    margin-left: 1.93vw;
+    padding-top: 2.75vh;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -84,8 +97,8 @@ div:has(#products:hover) #triangle {
     color: red;
 }
 #where {
-    margin-left: 50px;
-    padding-top: 37px;
+    margin-left: 1.90vw;
+    padding-top: 2.75vh;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -95,8 +108,8 @@ div:has(#products:hover) #triangle {
     color: red;
 }
 #studio {
-    margin-left: 49px;
-    padding-top: 37px;
+    margin-left: 1.85vw;
+    padding-top: 2.75vh;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -105,13 +118,8 @@ div:has(#products:hover) #triangle {
 #studio:hover {
     color: red;
 }
-#section1 {
-    position: absolute;
-    display: flex;
-    margin-top: 70px;
-    background-color: rgb(255, 255, 255);
-    height: 20px;
-}
 #rosalia2 {
-    margin-top: 20px
+    position: fixed;
+    margin-top: .5lh;
+    width: 100%;
 }
