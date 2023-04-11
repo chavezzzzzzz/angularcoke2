@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  
+  isListVisible: boolean = false;
 
+  toggleListDisplay() {
+    this.isListVisible = !this.isListVisible;
+  }
+  
+  isRed: boolean = false;
+
+  toggleColor() {
+    this.isRed = !this.isRed;
+  }
 }
+
