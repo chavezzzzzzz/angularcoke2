@@ -1,18 +1,26 @@
 <div id="div1">
+    <div class="container">
+        <img id="nav" (click)="toggleListDisplay()" src="assets/nav.png">
+        <ul id="listnew" [ngStyle]="{ 'display': isListVisible ? 'block' : 'none' }">
+          <li><a href="">OUR PRODUCTS</a></li>
+          <li><a href="">SHOP</a></li>
+          <li><a href="">GIVE</a></li>
+          <li><a href="">REWARDS</a></li>
+          <li><a href="">WHERE TO BUY</a></li>
+          <li><a href="">COKE STUDIO</a></li>
+        </ul>
+    </div>      
     <img id="logo" height="50" width="50" src="assets/coke2.svg">
     <ul>
-    <a id="products" href="">OUR PRODUCTS</a>
-    <a id="triangle"></a>
-    <a id="shop" style="text-decoration:none" href="">SHOP</a>
-    <a id="give" href="">GIVE</a>
-    <a id="rewards" href="">REWARDS</a>
-    <a id="where" href="">WHERE TO BUY</a>
-    <a id="studio" href="">COKE STUDIO</a>
+        <a id="products" href="">OUR PRODUCTS</a>
+        <a id="triangle"></a>
+        <a id="shop" style="text-decoration:none" href="">SHOP</a>
+        <a id="give" href="">GIVE</a>
+        <a id="rewards" href="">REWARDS</a>
+        <a id="where" href="">WHERE TO BUY</a>
+        <a id="studio" href="">COKE STUDIO</a>
     </ul>
 </div>
-<p id="fill"></p>
+<!-- <p id="fill"></p> -->
 <img id="rosalia2" src="assets/rosalia2.jpeg">
 <!-- <button (click)="toggleColor()" [style.color]="isRed ? 'red' : 'blue'">hi</button> -->
-<!-- <img id="nav" (click)="toggleListDisplay()" src="assets/nav.png"> -->
-<!-- <ul id="listnew" [ngStyle]="{ 'display': isListVisible ? 'block' : 'none' }"> -->
-<!-- </ul> -->
