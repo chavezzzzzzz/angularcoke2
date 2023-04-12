@@ -1,14 +1,6 @@
 <div id="div1">
     <div class="container">
-        <img id="nav" (click)="toggleListDisplay()" src="assets/nav.png">
-        <ul id="listnew" [ngStyle]="{ 'display': isListVisible ? 'block' : 'none' }">
-          <li><a href="">OUR PRODUCTS</a></li>
-          <li><a href="">SHOP</a></li>
-          <li><a href="">GIVE</a></li>
-          <li><a href="">REWARDS</a></li>
-          <li><a href="">WHERE TO BUY</a></li>
-          <li><a href="">COKE STUDIO</a></li>
-        </ul>
+        <img id="nav" (click)="toggleBgColor()" [style.background-color]="isGrey ? 'rgba(241, 238, 238, 1)' : ''" (click)="toggleListDisplay()" src="assets/nav.png">
     </div>      
     <img id="logo" height="50" width="50" src="assets/coke2.svg">
     <ul>
@@ -21,6 +13,14 @@
         <a id="studio" href="">COKE STUDIO</a>
     </ul>
 </div>
+<ul id="listnew" [ngStyle]="{ 'display': isListVisible ? 'flex' : '', 'flex-direction': isListVisible ? 'column' : 'row' }">
+    <li><a class="list2" id="products2" href="">OUR PRODUCTS</a></li>
+    <li><a class="list2" href="">SHOP</a></li>
+    <li><a class="list2" href="">GIVE</a></li>
+    <li><a class="list2" href="">REWARDS</a></li>
+    <li><a class="list2" href="">WHERE TO BUY</a></li>
+    <li id="coke2" ><a class="list2" href="">COKE STUDIO</a></li>
+</ul>
 <!-- <p id="fill"></p> -->
 <img id="rosalia2" src="assets/rosalia2.jpeg">
 <!-- <button (click)="toggleColor()" [style.color]="isRed ? 'red' : 'blue'">hi</button> -->

@@ -15,11 +15,16 @@ export class NavbarComponent {
     onWindowResize(event: any) {
       if (event.target.innerWidth > 600) {
         this.isListVisible = false;
+        this.isGrey = false;
       }
     }
   isRed: boolean = false;
     toggleColor() {
       this.isRed = !this.isRed;
     }
+  isGrey: boolean = false;
+  toggleBgColor() {
+    this.isGrey = !this.isGrey;
+  }
 }
 
