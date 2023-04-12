@@ -26,21 +26,4 @@ export class NavbarComponent {
   toggleBgColor() {
     this.isGrey = !this.isGrey;
   }
-
-//@HostListener('window:mousemove', ['$event'])
-//  onMouseMove(event: MouseEvent) {
-//    if (this.isHovered && (event.clientX < 100 || event.clientY < 100)) {
-//      this.bgColor = 'red';
-//    } else {
-//      this.bgColor = 'blue';
-//    }
-//  }
-
-
-
-
-
-
-
 }
-

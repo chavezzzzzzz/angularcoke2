@@ -229,8 +229,27 @@ div:has(#products:hover) #triangle {
 #nope {
     display: none;
 }
-#lastdiv {
+#lastul {
     display: none;
+    list-style: none;
+}
+#lastul1:has(#products:hover) > #lastul {
+    display: block;
+    position: absolute;
+    margin-top: 5.63em;
+    margin-left: 12em;
+    width: 34.5em;
+    height: 50.5em;
+    color: black;
+    background-color: white;
+    z-index: 400;
+    border: .08em solid rgb(205, 202, 202);
+}
+.lastimages {
+    width: 33.5em;
+    height: 7.5em;
+    margin-top: .6em;
+    margin-left: .5em;
 }
 @media screen and (max-width: 600px) {
     ul {
@@ -245,7 +264,6 @@ div:has(#products:hover) #triangle {
     }
     #triangle {
         display: none;
-        /* border-left: 5px solid white; */
     }
     #give {
         display: none;
@@ -330,8 +348,6 @@ div:has(#products:hover) #triangle {
         }
     }
     #list3 {
-        /* position: relative; */
-        /* z-index: 200; */
         display: none;
         border: none;
         border-bottom: none;
@@ -345,17 +361,13 @@ div:has(#products:hover) #triangle {
         margin: 0;
         gap: 0;
     }
-    
     ul a {
         text-decoration: none;
         list-style: none;
         color: black;
     }
     .list3a {
-        padding-left: 2.3em;
-    }
-    #listnew:has(#list2products:hover) #list3 {
-        display: block;
+        padding-left: 1.1em;
     }
     #listnew:has(#list2products:hover) #list2products {
         border-bottom: none;
@@ -365,6 +377,9 @@ div:has(#products:hover) #triangle {
     }
     #listnew:has(#list2products:hover) #list2shop {
         border-top: 1px solid rgb(205, 202, 202)
+    }
+    #list2products:hover > #list3 {
+        display: block;
     }
     #listnew:has(#list3licoca:hover) #list3coca {
         color: red;
