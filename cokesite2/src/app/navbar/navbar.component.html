@@ -14,13 +14,25 @@
     </ul>
 </div>
 <ul id="listnew" [ngStyle]="{ 'display': isListVisible ? 'flex' : '', 'flex-direction': isListVisible ? 'column' : 'row' }">
-    <li><a class="list2" id="products2" href="">OUR PRODUCTS</a></li>
-    <li><a class="list2" href="">SHOP</a></li>
-    <li><a class="list2" href="">GIVE</a></li>
-    <li><a class="list2" href="">REWARDS</a></li>
-    <li><a class="list2" href="">WHERE TO BUY</a></li>
-    <li id="coke2" ><a class="list2" href="">COKE STUDIO</a></li>
+    <li id="list2products"><a class="list2" id="products2" href="">OUR PRODUCTS</a></li>
+        <div id="lastdiv"></div>
+            <div id="nope"></div>
+                <ul id="list3">
+                    <li class="list3li" id="list3licoca"><a class="list3a" id="list3coca" href="">Coca-Cola</a></li>
+                    <li class="list3li" id="list3lizero"><a class="list3a" id="list3zero" href="">Coke Zero Sugar</a></li>
+                    <li class="list3li" id="list3liflavors"><a class="list3a" id="list3flavors" href="">Flavors</a></li>
+                    <li class="list3li" id="list3licreations"><a class="list3a" id="list3creations">Coca-Cola Creations</a></li>
+                    <li class="list3li" id="list3litastes"><a class="list3a" id="list3tastes" href="">Coca-Cola Local Tastes</a></li>
+                    <li class="list3li" id="list3liall"><a class="list3a" id="list3all" href="">All Products</a></li>
+                </ul>
+    <li id="list2shop"><a class="list2" id="shop2" href="">SHOP</a></li>
+    <li id="list2give"><a class="list2" id="give2" href="">GIVE</a></li>
+    <li id="list2rewards"><a class="list2" id="rewards2" href="">REWARDS</a></li>
+    <li id="list2where"><a class="list2" id="where2" href="">WHERE TO BUY</a></li>
+    <li id="coke2" ><a class="list2" id="studio2" href="">COKE STUDIO</a></li>
 </ul>
+<img [ngStyle]="{ 'display': isListVisible ? 'block' : '' }" id="triangle2" src="assets/triangle.png">
+<!-- <a id="triangle2"></a> -->
 <!-- <p id="fill"></p> -->
 <img id="rosalia2" src="assets/rosalia2.jpeg">
 <!-- <button (click)="toggleColor()" [style.color]="isRed ? 'red' : 'blue'">hi</button> -->

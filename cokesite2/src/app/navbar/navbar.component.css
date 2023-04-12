@@ -220,6 +220,18 @@ div:has(#products:hover) #triangle {
     height: 90vh;
     z-index: 9;
 }
+#triangle2 {
+    display: none;
+}
+#list3 {
+    display: none;
+}
+#nope {
+    display: none;
+}
+#lastdiv {
+    display: none;
+}
 @media screen and (max-width: 600px) {
     ul {
         background-color: white;
@@ -271,9 +283,6 @@ div:has(#products:hover) #triangle {
         color: black;
         padding-left: 1.5em;
     }
-    .list2:hover {
-        color: red;
-    }
     li {
         border-bottom: 1px solid rgb(205, 202, 202);
         padding: 1.4em;
@@ -282,20 +291,97 @@ div:has(#products:hover) #triangle {
     #coke2 {
         border-bottom: none;
     }
-    /* .container { */
-        /* width: 86.4%; */
-    /* } */
-    /* #listnew { */
-        /* margin-top: 2.47em; */
-        /* padding: 2em; */
-        /* gap: 2em; */
-        /* width: 100%; */
-        /* border: none; */
-    /* } */
-    /* .list2 { */
-        /* color: blue; */
-    /* } */
-    /* #products2 { */
-        /* color:blue; */
-    /* } */
+    #triangle2 {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        width: .26em;
+        height: .5em;
+        margin-top: 1.3em;
+        margin-left: 1.6em;
+    }
+    #listnew:has(#list2products:hover) #products2 {
+        color: red;
+    }
+    #listnew:has(#list2products:hover) ~ #triangle2 {
+        animation: swivel1 .05s linear 1 forwards;
+    }
+    #listnew:has(#list2shop:hover) #shop2 {
+        color: red;
+    }
+    #listnew:has(#list2give:hover) #give2 {
+        color: red;
+    }
+    #listnew:has(#list2rewards:hover) #rewards2 {
+        color: red;
+    }
+    #listnew:has(#list2where:hover) #where2 {
+        color: red;
+    }
+    #listnew:has(#coke2:hover) #studio2 {
+        color: red;
+    }
+    @keyframes swivel1 {
+        from{
+            transform: rotate(0deg) translate(0px)
+        }
+        to {
+            transform: rotate(90deg) translate(-3px)
+        }
+    }
+    #list3 {
+        /* position: relative; */
+        /* z-index: 200; */
+        display: none;
+        border: none;
+        border-bottom: none;
+        text-decoration: none;
+        list-style: none;
+        background-color: rgb(241, 238, 238);
+    }
+    #list3 li {
+        border-bottom: none;
+        padding: .6em;
+        margin: 0;
+        gap: 0;
+    }
+    
+    ul a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+    .list3a {
+        padding-left: 2.3em;
+    }
+    #listnew:has(#list2products:hover) #list3 {
+        display: block;
+    }
+    #listnew:has(#list2products:hover) #list2products {
+        border-bottom: none;
+    }
+    #nope:hover {
+        display: block;
+    }
+    #listnew:has(#list2products:hover) #list2shop {
+        border-top: 1px solid rgb(205, 202, 202)
+    }
+    #listnew:has(#list3licoca:hover) #list3coca {
+        color: red;
+    }
+    #listnew:has(#list3lizero:hover) #list3zero {
+        color: red;
+    }
+    #listnew:has(#list3liflavors:hover) #list3flavors {
+        color: red;
+    }
+    #listnew:has(#list3licreations:hover) #list3creations {
+        color: red;
+    }
+    #listnew:has(#list3litastes:hover) #list3tastes {
+        color: red;
+    }
+    #listnew:has(#list3liall:hover) #list3all {
+        color: red;
+    }
   }
